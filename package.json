@@ -1,0 +1,19 @@
+{
+  "name": "image-processing-api",
+  "version": "1.0.0",
+  "description": "Image Process API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/samtechnet/image-processing-api-starter.git"
+  },
+  "author": "Samuel Omolaja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samtechnet/image-processing-api-starter/issues"
+  },
+  "homepage": "https://github.com/samtechnet/image-processing-api-starter#readme"
+}
