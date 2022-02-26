@@ -2,9 +2,13 @@
   "name": "image-processing-api",
   "version": "1.0.0",
   "description": "Image Process API",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run build \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --config prettierrc '**/*.ts' --write",
+    "watch": "nodemon index.ts",
+    "eslint": "eslint",
+    "build": "npx tsc"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,22 @@
   "bugs": {
     "url": "https://github.com/samtechnet/image-processing-api-starter/issues"
   },
-  "homepage": "https://github.com/samtechnet/image-processing-api-starter#readme"
+  "homepage": "https://github.com/samtechnet/image-processing-api-starter#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/sharp": "^0.29.5",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "eslint": "^8.9.0",
+    "eslint-config-xo": "^0.40.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.21",
+    "express": "^4.17.3",
+    "sharp": "^0.30.1",
+    "ts-node": "^10.5.0"
+  }
 }
