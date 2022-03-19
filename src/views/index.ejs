@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-Processing-API | <%= title%></title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+    <div>
+        <head> <h1>This page helps you to resize your images when you specify your size parameters</h1></head>
+    </div>
+    <div>
+        <form action="http://localhost:3002/apis/processor" id="myForm"  method="GET">
+            <label for="img" >Select Image</label>
+            <input type="file" name="img" id="img"   accept="image/*" required>
+            <label for="width">Width</label>
+            <input type="number" name="width" placeholder="200" id="width"  min="1" >
+            <label for="height">Height</label>
+            <input type="number" name="height" placeholder="300" id="height" min="1"  step="1">
+            <input type="submit"  value="Submit">
+        </form>
+    </div>
+    
+    <div>
+        <p>Choose from the list of Image Names below for resizing</p>
+        <ol>
+            <li>Encenadaport</li>
+            <li>Fjord</li>
+            <li>Icelandwaterfall</li>
+            <li>Palmtunnel</li>
+            <li>Santamonica</li>
+        </ol>
+    </div>
+    <div><footer>All right reserve </footer></div>
+
+    <script src="/js/app.js"> 
+//     const btn = document.querySelector('button');
+
+// function sendData( data ) {
+//   console.log( 'Sending data' );
+// }
+    //src= "/src/public/app.ts"
+    </script>
+</body>
+</html>
